@@ -14,3 +14,7 @@ BOOKS = [
 @app.get("/books")
 async def read_all_books():
     return BOOKS
+
+@app.get("/book")
+async def read_first_book():
+    return BOOKS[0]
